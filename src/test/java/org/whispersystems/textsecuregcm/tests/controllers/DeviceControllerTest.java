@@ -53,11 +53,11 @@ public class DeviceControllerTest {
     public DumbVerificationDeviceController(PendingDevicesManager pendingDevices,
                                             AccountsManager accounts,
                                             MessagesManager messages,
-                                            DirectoryQueue cdsSender,
+                                            //DirectoryQueue cdsSender,
                                             RateLimiters rateLimiters,
                                             Map<String, Integer> deviceConfiguration)
     {
-      super(pendingDevices, accounts, messages, cdsSender, rateLimiters, deviceConfiguration);
+      super(pendingDevices, accounts, messages /*, cdsSender*/, rateLimiters, deviceConfiguration);
     }
 
     @Override

@@ -39,22 +39,22 @@ import java.security.cert.X509Certificate;
 
 public class DirectoryReconciliationClient {
 
-  private final String replicationUrl;
-  private final Client client;
+//  private final String replicationUrl;
+//  private final Client client;
 
-  public DirectoryReconciliationClient(DirectoryServerConfiguration directoryServerConfiguration)
-      throws CertificateException
-  {
-    this.replicationUrl = directoryServerConfiguration.getReplicationUrl();
-    this.client         = initializeClient(directoryServerConfiguration);
-  }
+//  public DirectoryReconciliationClient(DirectoryServerConfiguration directoryServerConfiguration)
+//      throws CertificateException
+//  {
+//    this.replicationUrl = directoryServerConfiguration.getReplicationUrl();
+//    this.client         = initializeClient(directoryServerConfiguration);
+//  }
 
-  public DirectoryReconciliationResponse sendChunk(DirectoryReconciliationRequest request) {
-    return client.target(replicationUrl)
-                 .path("/v1/directory/reconcile")
-                 .request(MediaType.APPLICATION_JSON_TYPE)
-                 .put(Entity.json(request), DirectoryReconciliationResponse.class);
-  }
+//  public DirectoryReconciliationResponse sendChunk(DirectoryReconciliationRequest request) {
+//    return client.target(replicationUrl)
+//                 .path("/v1/directory/reconcile")
+//                 .request(MediaType.APPLICATION_JSON_TYPE)
+//                 .put(Entity.json(request), DirectoryReconciliationResponse.class);
+//  }
 
   private static Client initializeClient(DirectoryServerConfiguration directoryServerConfiguration)
       throws CertificateException

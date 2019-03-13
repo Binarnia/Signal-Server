@@ -32,16 +32,16 @@ public class DirectoryConfiguration {
   @NotNull
   @Valid
   private SqsConfiguration sqs;
-    
-  @JsonProperty
-  @NotNull
-  @Valid
-  private DirectoryClientConfiguration client;
 
-  @JsonProperty
-  @NotNull
-  @Valid
-  private DirectoryServerConfiguration server;
+  //  @JsonProperty
+  //@NotNull
+  //@Valid
+  //private DirectoryClientConfiguration client;
+
+  //@JsonProperty
+  //@NotNull
+  //@Valid
+  //private DirectoryServerConfiguration server;
 
   public RedisConfiguration getRedisConfiguration() {
     return redis;
@@ -51,12 +51,12 @@ public class DirectoryConfiguration {
     return sqs;
   }
 
-  public DirectoryClientConfiguration getDirectoryClientConfiguration() {
-    return client;
-  }
+  //public DirectoryClientConfiguration getDirectoryClientConfiguration() {
+  //  return client;
+  // }
 
-  public DirectoryServerConfiguration getDirectoryServerConfiguration() {
-    return server;
-  }
+  // public DirectoryServerConfiguration getDirectoryServerConfiguration() {
+  //  return server;
+  // }
 
 }

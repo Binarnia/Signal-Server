@@ -23,20 +23,20 @@ import org.hibernate.validator.constraints.NotEmpty;
 
 public class DirectoryClientConfiguration {
 
-  @NotEmpty
-  @JsonProperty
-  private String userAuthenticationTokenSharedSecret;
+//  @NotEmpty
+//  @JsonProperty
+//  private String userAuthenticationTokenSharedSecret;
 
-  @NotEmpty
-  @JsonProperty
-  private String userAuthenticationTokenUserIdSecret;
+  //  @NotEmpty
+  //@JsonProperty
+  //private String userAuthenticationTokenUserIdSecret;
 
-  public byte[] getUserAuthenticationTokenSharedSecret() throws DecoderException {
-    return Hex.decodeHex(userAuthenticationTokenSharedSecret.toCharArray());
-  }
+  //public byte[] getUserAuthenticationTokenSharedSecret() throws DecoderException {
+//    return Hex.decodeHex(userAuthenticationTokenSharedSecret.toCharArray());
+//  }
 
-  public byte[] getUserAuthenticationTokenUserIdSecret() throws DecoderException {
-    return Hex.decodeHex(userAuthenticationTokenUserIdSecret.toCharArray());
-  }
+  //public byte[] getUserAuthenticationTokenUserIdSecret() throws DecoderException {
+//    return Hex.decodeHex(userAuthenticationTokenUserIdSecret.toCharArray());
+  // }
 
 }
